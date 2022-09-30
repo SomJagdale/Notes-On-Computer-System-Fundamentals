@@ -256,6 +256,10 @@
            the bytes to the user instead of the numeric values.
            
            ```
+                       /* Code Listing A.36:
+                         Printing "Hello" and turning it into "Ha!"
+                       */
+
                       uint8_t string[] = { 72, 101, 108, 108, 111, 0 };
                       printf ("The string is '%s'\n", string);
 
@@ -264,6 +268,52 @@
                       string[3] = (char) NULL;
                       printf ("The string is '%s'\n", string);
            ```
+           - C needs the quotes to know where the string begins and ends in the source code. The machine does not; the string begins at
+           the address of the first character and ends at the null byte.
+           - This design choice—using a single extra byte for a null terminator instead of four bytes to store an explicit length field—is
+           a quintessential example of the space-time tradeoff that system designers face. By requiring extra time to search the string manually,
+           the language could save three bytes of space per string; as programs could store and work with many, many strings, the cumulative 
+           space savings of three bytes per string could be potentially very large. At the time the language was designed, execution time was
+           cheap but memory space was prohibitively expensive; thus, this design decision was a good tradeoff at the time, given the circumstances.
+           - 
+           ```
+                       /* Code Listing A.37:
+                         Three different ways to create the string "Hello"
+                       */
+
+                      char array[] = "Hello";
+                      char *pointer = "Hello";
+                      char *heap = strdup ("Hello");
+
+                      /* None of these is the string length */
+                      printf ("Sizes: %zd %zd %zd\n", sizeof (array),
+                              sizeof (pointer), sizeof (heap));
+
+                      array[1] = 'a';
+                      printf ("Array version: %s\n", array);
+                      heap[1] = 'a';
+                      printf ("Heap version: %s\n", heap);
+                      pointer[1] = 'a'; // run-time exception
+           
+           ```
+           
+           - That is, line 5 operates in a similar manner to declaring an array of int values or any other such local array. Line 6, in contrast,
+           places a pointer variable on the stack; the actual bytes of the string are placed into the program’s read-only data section (.rodata).
+           Line 7 also places a pointer on the stack, but the strdup() function returns a pointer to a dynamically allocated copy of the string’s
+           bytes on the heap. In short, these three lines illustrate how we can determine which memory segment (stack, data, or heap) will contain
+           the bytes of the string.
+           
+           - Line 6 illustrates a very common source of confusion for those new to the intricacies of C strings. Recall that the sizeof() 
+           operator returns the number of bytes required to store a particular variable. In the cases of the pointer and heap variables, 
+           sizeof() will always return the same answer regardless of the string: 8 (assuming this is a 64-bit architecture). Both of these
+           variables are pointers, so sizeof() returns the size of an address; sizeof() never dereferences a pointer to determine the size 
+           (or length) of the object being pointed to. In the case of the array variable, sizeof() returns the total number of bytes allocated
+           for the variable on the stack: 6. That is, calling sizeof() on the array version of declaration will include the null byte. 
+           Furthermore, assume that we had modified the array variable as in Code Listing A.37, changing the string from "Hello" to "Ha!";
+           sizeof() would still return an answer of 6 (not 4), because that is how much storage space the compiler statically associated 
+           with the variable named array. In short, sizeof() should never be used to determine the length of a string; it does not ever 
+           examine the actual contents. Instead, if you need to compute the length of a string, you should always use strlen() or strnlen().
+           
 #### 10.7.1. Investigating String Contents
             1. 
             
