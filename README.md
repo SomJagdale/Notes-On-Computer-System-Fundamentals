@@ -254,11 +254,8 @@
            - One key idea here is that everything in the machine is just a number. The meaning and interpretation of those bytes as 
            the string "Hello" is created by the %s format specifier, which tells the display to present the ASCII interpretation of 
            the bytes to the user instead of the numeric values.
-           - 
+           
            ```
-           /* Code Listing A.36:
-              Printing "Hello" and turning it into "Ha!"
-            */
            uint8_t string[] = { 72, 101, 108, 108, 111, 0 };
            printf ("The string is '%s'\n", string);
 
