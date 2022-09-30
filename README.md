@@ -256,20 +256,14 @@
            the bytes to the user instead of the numeric values.
            
            ```
-           uint8_t string[] = { 72, 101, 108, 108, 111, 0 };
-           printf ("The string is '%s'\n", string);
+                      uint8_t string[] = { 72, 101, 108, 108, 111, 0 };
+                      printf ("The string is '%s'\n", string);
 
-           string[1] = 'a';
-           string[2] = 0x21;
-           string[3] = (char) NULL;
-           printf ("The string is '%s'\n", string);
+                      string[1] = 'a';
+                      string[2] = 0x21;
+                      string[3] = (char) NULL;
+                      printf ("The string is '%s'\n", string);
            ```
-           
-           ```
-function test() {
-  console.log("notice the blank line before this function?");
-}
-```
 #### 10.7.1. Investigating String Contents
             1. 
             
