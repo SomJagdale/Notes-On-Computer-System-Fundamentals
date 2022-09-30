@@ -1,5 +1,4 @@
 # MY Notes-On-Computer-System-Fundamentals
-
 Chapter 0   Preface
 0.1. About OpenCSF
 0.2. How to Use this System
