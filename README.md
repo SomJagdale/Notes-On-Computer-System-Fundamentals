@@ -314,6 +314,18 @@
            with the variable named array. In short, sizeof() should never be used to determine the length of a string; it does not ever 
            examine the actual contents. Instead, if you need to compute the length of a string, you should always use strlen() or strnlen().
            
+           -Bug Warning
+
+           The use of pointers to declare strings leads to a number of subtle misunderstandings that end up as bugs in programs. One misunderstanding is that there is a difference between initializing a pointer to the empty string ("") as opposed to NULL. The empty string is a char array that consists of a single char: the null byte '\0'. As such, initializing a char* to the empty string makes the pointer point to a valid memory location (the address of the null byte). In contrast, setting the char* variable to NULL makes it point to nothing; dereferencing the pointer would produce a segmentation fault. This point of confusion leads to potential errors when the strings are used. Consider the following example:
+                      ```
+                      char *empty = "";
+                      char *null = NULL;
+                      printf ("Empty: %s; null: %s\n", empty, null);
+                      ```
+           Although there is no * on line 3, this code involves two pointer dereferences. That is, when printf() processes the %s format specifiers, it needs to get the contents of the string by dereferencing the empty and null pointers. When the empty string is processed, nothing interesting happens; it is a valid string, but it has no characters to print.
+
+           In contrast, when printf() encounters the null pointer, there is a problem; processing %s involves dereferencing the pointer (which is NULL), so this line would traditionally cause a segmentation fault. Newer implementations of the C library have modified printf() to detect and avoid such crashes by printing the string (null) when given a NULL pointer. This new version only makes this exception for NULL exactly. If the pointer is not NULL, but the value is not a valid address (e.g., try changing the code above to point to use char *null = (char *)1;), printf() will cause a segmentation fault.
+           
 #### 10.7.1. Investigating String Contents
             1. 
             
