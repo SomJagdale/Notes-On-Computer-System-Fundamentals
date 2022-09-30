@@ -1,8 +1,5 @@
 # MY Notes-On-Computer-System-Fundamentals
 
-#### Chapter 0   Preface
-#### 0.1. About OpenCSF
-#### 0.2. How to Use this System
 #### Chapter 1   Introduction to Computer Systems
 #### 1.1. Introduction to Concurrent Systems
 #### 1.2. Systems and Models
@@ -253,7 +250,12 @@
 #### 10.5.3. Arrays as Parameters
 #### 10.6. Pointers and Dynamic Allocation
 #### 10.7. Strings
+           - A string is an array of characters ending in the null byte.
+           - One key idea here is that everything in the machine is just a number. The meaning and interpretation of those bytes as the string "Hello" is created by the %s format specifier, which tells the display to present the ASCII interpretation of the bytes to the user instead of the numeric values.
+
 #### 10.7.1. Investigating String Contents
+            1. 
+            
 #### 10.7.2. Common String Manipulations
 #### 10.7.3. Converting Between Strings and Integers
 #### 10.8. Function Pointers
