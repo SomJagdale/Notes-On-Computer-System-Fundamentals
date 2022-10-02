@@ -12,6 +12,7 @@
 #### 1.4. System Architectures
 #### 1.4.1. Client/Server Architectures
 #### 1.4.2. Peer-to-peer (P2P) Architectures
+
 #### 1.4.3. Layered Architectures
 #### 1.4.4. Pipe-and-filter Architectures
 #### 1.4.5. Event-driven Architectures
