@@ -47,7 +47,6 @@
            #### 1.4.5. Event-driven Architectures
                       An event refers to a meaningful change in the state of the system. For instance, in a GUI, keyboard presses and mouse clicks are instances of events. When either of these occur, the user is indicating a desire for the system to respond to this request in some way.
                       Example - Keyboard presses and mouse clicks
-                      
            #### 1.4.6. Hybrid Architectures
            #### 1.5. State Models in UML
            #### 1.5.1. State Space Explosion
