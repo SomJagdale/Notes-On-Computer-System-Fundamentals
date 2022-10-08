@@ -1,28 +1,50 @@
 # MY Notes-On-Computer-System-Fundamentals
 
 #### Chapter 1   Introduction to Computer Systems
-#### 1.1. Introduction to Concurrent Systems
-#### 1.2. Systems and Models
-#### 1.2.1. Models as Representations
-#### 1.2.2. From Models to Implementations
-#### 1.3. Themes and Guiding Principles
-#### 1.3.1. Systems as Foundations of Computing
-#### 1.3.2. Systems and Complexity
-#### 1.3.3. The Semiotics of Computer Systems
-#### 1.4. System Architectures
-#### 1.4.1. Client/Server Architectures
-#### 1.4.2. Peer-to-peer (P2P) Architectures
+           #### 1.1. Introduction to Concurrent Systems
+                      - Two or many process runs parallely to improve the response time and throughput of the application.
+                      - It improves the scallability 
+                      - It imrproves the number of request processing per unit of time.
+                      - It improve resource utilisation
+           #### 1.2. Systems and Models
+                      Computer system is composed of below components 
+                      - CPU(Register and ALU)
+                      - RAM
+                      - Secondery Storage
+                      - PCB
+                      - Input/Output Devices 
+                      - Operation System
 
-#### 1.4.3. Layered Architectures
-#### 1.4.4. Pipe-and-filter Architectures
-#### 1.4.5. Event-driven Architectures
-#### 1.4.6. Hybrid Architectures
-#### 1.5. State Models in UML
-#### 1.5.1. State Space Explosion
-#### 1.5.2. Implementing Finite State Machines
-#### 1.6. Sequence Models in UML
-#### 1.6.1. Summary Questions
-#### 1.7. Extended Example: Text Parser State Machine
+           #### 1.2.1. Models as Representations
+
+           #### 1.3. Themes and Guiding Principles
+                      - Scarcity of Resources
+                      - Space/Time Tradeoff 
+                      - Interface abstraction
+                      - Security vs Usability
+           #### 1.3.1. Systems as Foundations of Computing
+           #### 1.3.2. Systems and Complexity
+                      - Application Software
+                      - OS(Scheduler, Memory Managment, Network Interface, File System)
+                      - Hardware(CPU, Memory & Storage, Network Cards)
+
+           #### 1.3.3. The Semiotics of Computer Systems
+           #### 1.4. System Architectures
+                     The architectural style describes the relationship between entities in the system and how those entities can communicate.
+           #### 1.4.1. Client/Server Architectures
+
+           #### 1.4.2. Peer-to-peer (P2P) Architectures
+
+           #### 1.4.3. Layered Architectures
+           #### 1.4.4. Pipe-and-filter Architectures
+           #### 1.4.5. Event-driven Architectures
+           #### 1.4.6. Hybrid Architectures
+           #### 1.5. State Models in UML
+           #### 1.5.1. State Space Explosion
+           #### 1.5.2. Implementing Finite State Machines
+           #### 1.6. Sequence Models in UML
+           #### 1.6.1. Summary Questions
+           #### 1.7. Extended Example: Text Parser State Machine
 #### Chapter 2   Processes and OS Basics
 #### 2.1. Processes and OS Basics
 #### 2.2. Processes and Multiprogramming
