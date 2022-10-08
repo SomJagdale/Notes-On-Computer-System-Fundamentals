@@ -27,17 +27,27 @@
                       - Application Software
                       - OS(Scheduler, Memory Managment, Network Interface, File System)
                       - Hardware(CPU, Memory & Storage, Network Cards)
-
            #### 1.3.3. The Semiotics of Computer Systems
            #### 1.4. System Architectures
                      The architectural style describes the relationship between entities in the system and how those entities can communicate.
            #### 1.4.1. Client/Server Architectures
-
+                      Multiple Clients connect to single server
+                      Example - Web server (Vaccin registration)
            #### 1.4.2. Peer-to-peer (P2P) Architectures
-
+                      All P2P nodes are client as well as servers 
+                      Example - Bit torrent, Blockchain
            #### 1.4.3. Layered Architectures
+                      - Presentation Layer
+                      - Bussiness Layer 
+                      - Service Layer 
+                      - Persistence Layer
            #### 1.4.4. Pipe-and-filter Architectures
+                      The pipe-and-filter system constructed from chaining command-line utilities
+                      Example - $ sort foo.txt | grep -i error | head -n 10 > out.txt
            #### 1.4.5. Event-driven Architectures
+                      An event refers to a meaningful change in the state of the system. For instance, in a GUI, keyboard presses and mouse clicks are instances of events. When either of these occur, the user is indicating a desire for the system to respond to this request in some way.
+                      Example - Keyboard presses and mouse clicks
+                      
            #### 1.4.6. Hybrid Architectures
            #### 1.5. State Models in UML
            #### 1.5.1. State Space Explosion
