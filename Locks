@@ -1,3 +1,9 @@
+Synchronisation properties
+Safety – There is no way for two threads to be in the critical section concurrently, so they cannot interfere with each other. This property is also called mutual exclusion.
+Liveness – If no thread is in the critical section and at least one tries to enter, then one of the threads will be able to enter. This property is also called progress.
+Fairness – Assuming neither thread can remain in the critical section indefinitely, if a thread attempts to enter the critical section, it will eventually do so. This property is also called bounded waiting.
+
+
 Locks
 
 One of the fundamental synchronisation primities to eliminate the race condition in the crtitical section.
@@ -26,3 +32,4 @@ To exploit this advantage in parallel execution, POSIX (like other modern thread
 Given that spinlocks can benefit from avoiding unnecessary context switches, it may seem that they are inherently superior to mutexes. However, this is not the case, and mutexes often perform better. Note that spinlocks only benefit when waiting takes less time than executing a context switch. In the example above, we assumed that the thread only needed to wait 10 ns for the lock to become available.
 However, if the lock’s owner is performing a complex and long-running operation, the thread using the spinlock will consume the CPU time for the rest of its quantum, which is typically on the order of 100 ms (i.e., 100,000,000 ns). That is, if the lock does not become immediately available, the thread will waste millions of clock cycles in an attempt to save thousands. Clearly, this would be a horrible trade-off!
 The choice of spinlocks vs. traditional mutexes ultimately comes down to the typical duration of the critical sections. If all of the critical sections are short in duration, then spinlocks are likely to provide superior performance, as there is an increased likelihood that the lock’s holder will be releasing it soon. If long critical sections are common, then mutexes are preferable to avoid the wasted CPU time that comes from spinlocks’ busy waiting.
+
