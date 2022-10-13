@@ -10,3 +10,10 @@ We only prevent it
 
 Bankers algorithme 
 Bounded waiting
+
+Avoiding Deadlock
+As three of the deadlock conditions (mutual exclusion, no preemption, hold and wait) are standard features in modern systems, the typical solution to the avoiding deadlock in software[1] is to avoid circular waiting. There are a variety of strategies that can be employed to avoid circular waiting that can be applied, depending on the needs of the system being built.
+Impose an ordering on resources. If one thread acquires sem_a prior to acquiring sem_b, require other threads to follow this order.
+Use timed or non-blocking variants that can provide immediate notification of failure. If a function like pthread_mutex_trylock() or pthread_cond_timedwait() returns an error, release other held resources and try again later.
+Limit the number of potential thread accesses. For instance, consider a scenario where there are five resource instances, and each thread needs two of them. Using a semaphore initialized to four would guarantee at least one thread will always have access to both the instances it needs; this strategy allows that thread to finish its work, eventually releasing both resource instances for the other threads to use.
+Employ higher-level synchronization primitives and strategies. In the next chapter, we describe some common well-known solutions that are known to be deadlock-free.
