@@ -1,0 +1,16 @@
+Locks
+
+One of the fundamental synchronisation primities to eliminate the race condition in the crtitical section.
+it can be callled mutex lock 
+it provide the mutual exclusing access to the critical section
+That is, once a thread acquires a lock and enters a critical section, no other thread can also enter the critical section until the first thread completes its work
+
+Locks have the following key features:
+  Mutual exclusion: A lock is initially considered to be unlocked. Only one thread can acquire the lock at a time. Once a lock has been acquired by one thread, no other lock can acquire it until it has been released.
+  Non-preemption: If a thread acquires a lock, no other thread can take it away. The thread that has acquired the lock must voluntarily release it.
+  Atomic acquire and release operations: The implementation of these operations guarantee their executions to be free of race conditions. If two threads both try to acquire a lock at the same time, either one succeeds and one fails, or both fail (if the lock was previously acquired). Similarly, when a thread releases a lock that it has acquired, this operation cannot fail due to interrupts or other exceptional control flow.
+  Blocking acquire operations: If a thread tries to acquire a lock that is currently being held by another thread, the current request to acquire the lock blocks and is added to a request queue for the lock. When a thread that holds a lock with pending requests releases it, exactly one of the waiting threads will become unblocked and acquire it.
+
+Operation should be automic - it means it should not be interepted by any other thread or with any exception
+
+POSIX Mutex
