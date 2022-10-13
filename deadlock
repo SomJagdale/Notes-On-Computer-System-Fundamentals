@@ -1,0 +1,12 @@
+Condition to get deadlock in the system
+1. Mutual exclusion
+2. No premption
+3. Hold and wait
+4. Circular wait
+
+Deadlock characterstics
+We can not avoid deadlog 
+We only prevent it
+
+Bankers algorithme 
+Bounded waiting
