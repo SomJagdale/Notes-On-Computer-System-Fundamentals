@@ -1,0 +1,23 @@
+Blocked state vs. waiting state of a thread
+A thread is inactive when in the blocked or waiting state. When in these states, the thread does not consume any CPU cycles.
+A thread is in the waiting state when it wants to wait on a signal from another thread before proceeding. Once this signal is received, it becomes runnable.
+A thread moves to the blocked state when it wants to access an object that is being used (locked) by another thread. Once that resource is available (unlocked) for the thread, it is no longer blocked and moves to the runnable state.
+The blocked state is mandated by the scheduler; whereas,​ the waiting state is self-imposed by the thread to maintain synchrony.
+
+Lock
+Mutual Exclustion, No Premption, Atomic aquire and release operation
+Locking mechanism - where thread blocks
+Example 
+Mutex Lock
+Spin Lock
+Try Lock
+
+
+Seamaphore
+Mutual Exclustion, No Premption, Atomic aquire and release operation
+Wait and Signal - 
+Singnaling Mechanism - or waiting mechanism
+
+Example - 
+Binary Seamaphore, 
+Counting samaphore
