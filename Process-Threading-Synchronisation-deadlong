@@ -1,0 +1,66 @@
+Process - A unit of execution 
+        - States of Process - Ready - Run - Waiting - Blocking - Killed - Swapped Out
+        - Process related linux commands - ps, top
+        - Process States details - PID, Priority ID, Heap Segment, Stack segment, Code segment, Data Segment, Socket 
+        - IPC - FIFO, FILE, PIPE, SOCKET, Message QUEUE, Shared Memory, Semaphore 
+        
+        - Advantages  - If one process kills doenst affet on other process in system.
+        - Limitation  - Huge context switch time
+       
+Threads - Light Process, Runs inside process 
+        - Share all except Stack segment 
+        - Commands top 
+        
+        Advantages - Improves the parallelism within process 
+                   - Low CPU Context switch time
+        Limitation - If one threads kill it affect on other threads
+                   -  Need to synchronise threads
+                   
+
+Synchronisation 
+         -  It is mechanism which we avoids the race condition over the critical section.
+         -  race condition - two or more thread writting same shared memory area and it running squence generate inconsistend or unpredicable result.
+         -  Critical section - it is section of code area which produce different, inconsitent and unpredicatable result when mulitple thread try to access it same time.
+         -  properties of synchronisation - Mutual Exclustion, Progress and Bounded waiting
+         
+         Advantages - Avaid race condition over critical section 
+         
+         Limitation - Slower due to conext switches
+                    - deadlock
+                    
+Mutex   - It is mechanism which we avoids the race condition over the critical section.
+        - Lock and Unlock Operation with binary or boolean variable, Locking mechanism, blocking threads adds in blocking queue
+        - It has properties - Mutual exclusion, No Premtion and Lock and Unlock are automic operations
+        - Allow only one thread to enter in crictical section
+        - Implement abstraction and encapsulation 
+        - Example Spinlock and TryLock
+        
+        Limitaion - Allows only one thread to enter in critical section
+
+Seamaphore
+        - It is mechanism which we avoids the race condition over the critical section.
+        - Wait and Signal opearion and automatic, Non-negative Seamaphore Singaling Mechanism, waited thraeds present on waiting queue
+        - It has properties - Mutual exclusion, No Premtion and Lock and Unlock are automic operations
+        - Doesnt provide abstrac encapsulation 
+        - Example Binary and Conting seamaphore
+        
+        Limitation - Doest provide abstraction and encapsulated operations 
+                   - might get in race condition between thread got signal call and getting exclusive lock 
+                   - only set sigle to single thread
+        
+Bearier  - 
+         - Thread killing doesnt affect on other threads
+         
+         
+Conditinal Variable - 
+         - Send single to all waiting threads 
+         - Provide abscraction adn encapsulation 
+         
+         
+ Deadlock - Sitution where infinite starvation or therad waitng for lock which holding by other indefinitely 
+          - condidation for deadlock - Hold and wait, No premtion, Circula Wait, Mutual exclusion
+          
+          How to avoid Deadlock
+           - use trylock and timeboudlock 
+           - bankers algorithem
+          
