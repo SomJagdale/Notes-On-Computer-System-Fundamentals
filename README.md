@@ -107,33 +107,35 @@
 #### 3.8.3. POSIX Unnamed Semaphores
 #### 3.9. Extended Example: Bash-lite: A Simple Command-line Shell
 #### Chapter 4   Networked Concurrency
+
 #### 4.1. Networked Concurrency
-#### 4.2. The TCP/IP Internet Model
-#### 4.2.1. Internet Model
-#### 4.2.2. Packet Encapsulation and Nomenclature
-#### 4.3. Network Applications and Protocols
-#### 4.3.1. Naming and Addressing
-#### 4.3.2. Protocol Specifications and RFCs
-#### 4.4. The Socket Interface
-#### 4.4.1. Networking Data Structures
-#### 4.4.2. Client Socket Interface
-#### 4.4.3. Server Socket Interface
-#### 4.4.4. Socket Communication
-#### 4.5. TCP Socket Programming: HTTP
-#### 4.5.1. Hypertext Transfer Protocol (HTTP)
-#### 4.5.2. BNF Protocol Specification
-#### 4.5.3. HTTP/1.1 Persistent Connections
-#### 4.5.4. Processing HTTP Headers
-#### 4.5.5. Persistent State with Cookies
-#### 4.6. UDP Socket Programming: DNS
-#### 4.6.1. Resolving DNS Queries
-#### 4.6.2. DNS Resource Record Structure
-#### 4.6.3. DNS Protocol Messages
-#### 4.6.4. Constructing DNS Queries with Sockets
-#### 4.6.5. Processing DNS Query Responses
-#### 4.7. Application-Layer Broadcasting: DHCP
-#### 4.7.1. DHCP Overview
-#### 4.7.2. DHCP Protocol Messages
+           #### 4.2. The TCP/IP Internet Model
+                      #### 4.2.1. Internet Model
+                      #### 4.2.2. Packet Encapsulation and Nomenclature
+           #### 4.3. Network Applications and Protocols
+                      #### 4.3.1. Naming and Addressing
+                      #### 4.3.2. Protocol Specifications and RFCs
+           #### 4.4. The Socket Interface
+                      #### 4.4.1. Networking Data Structures
+                      #### 4.4.2. Client Socket Interface
+                      #### 4.4.3. Server Socket Interface
+                      #### 4.4.4. Socket Communication
+           #### 4.5. TCP Socket Programming: HTTP
+                      #### 4.5.1. Hypertext Transfer Protocol (HTTP)
+                      #### 4.5.2. BNF Protocol Specification
+                      #### 4.5.3. HTTP/1.1 Persistent Connections
+                      #### 4.5.4. Processing HTTP Headers
+                      #### 4.5.5. Persistent State with Cookies
+           #### 4.6. UDP Socket Programming: DNS
+                      #### 4.6.1. Resolving DNS Queries
+                      #### 4.6.2. DNS Resource Record Structure
+                      #### 4.6.3. DNS Protocol Messages
+                      #### 4.6.4. Constructing DNS Queries with Sockets
+                      #### 4.6.5. Processing DNS Query Responses
+           #### 4.7. Application-Layer Broadcasting: DHCP
+                      #### 4.7.1. DHCP Overview
+                      #### 4.7.2. DHCP Protocol Messages
+                      
 #### 4.8. Extended Example: CGI Web Server
 #### Chapter 5   The Internet and Connectivity
 #### 5.1. The Internet and Connectivity
