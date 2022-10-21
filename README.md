@@ -136,33 +136,34 @@
                       #### 4.7.1. DHCP Overview
                       #### 4.7.2. DHCP Protocol Messages
                       
-#### 4.8. Extended Example: CGI Web Server
+           #### 4.8. Extended Example: CGI Web Server
 #### Chapter 5   The Internet and Connectivity
-#### 5.1. The Internet and Connectivity
-#### 5.2. Application Layer: Overlay Networks
-#### 5.2.1. Characteristics of Peer-to-Peer Networks
-#### 5.3. Transport Layer
-#### 5.3.1. Unreliable Transport: UDP
-#### 5.3.2. Reliable Transport: TCP
-#### 5.3.3. TCP Handshake and Connections
-#### 5.3.4. TCP Timeout and Packet Loss
-#### 5.4. Network Security Fundamentals
-#### 5.4.1. Symmetric Key Encryption
-#### 5.4.2. Public Key Encryption
-#### 5.4.3. Cryptographic Hash Functions
-#### 5.4.4. Transport-Layer Security (TLS)
-#### 5.4.5. TLS in Practice: HTTPS
-#### 5.5. Internet Layer: IP
-#### 5.5.1. IP Addresses and Subnets
-#### 5.5.2. IP Packet Formats
-#### 5.5.3. Network Routing Protocols
-#### 5.6. Link Layer
-#### 5.6.1. LAN Packet Transmission: Ethernet
-#### 5.6.2. LAN Packet Transmission: ARP
-#### 5.6.3. What Lies Beneath: Carrier Signals
-#### 5.7. Wireless Connectivity: Wi-Fi, Bluetooth, and Zigbee
-#### 5.7.1. Wireless Protocol Stacks and Uses
-#### 5.8. Extended Example: DNS Client
+           #### 5.1. The Internet and Connectivity
+           #### 5.2. Application Layer: Overlay Networks
+                      #### 5.2.1. Characteristics of Peer-to-Peer Networks
+           #### 5.3. Transport Layer
+                      #### 5.3.1. Unreliable Transport: UDP
+                      #### 5.3.2. Reliable Transport: TCP
+                      #### 5.3.3. TCP Handshake and Connections
+                      #### 5.3.4. TCP Timeout and Packet Loss
+           #### 5.4. Network Security Fundamentals
+                      #### 5.4.1. Symmetric Key Encryption
+                      #### 5.4.2. Public Key Encryption
+                      #### 5.4.3. Cryptographic Hash Functions
+                      #### 5.4.4. Transport-Layer Security (TLS)
+                      #### 5.4.5. TLS in Practice: HTTPS
+           #### 5.5. Internet Layer: IP
+                      #### 5.5.1. IP Addresses and Subnets
+                      #### 5.5.2. IP Packet Formats
+                      #### 5.5.3. Network Routing Protocols
+           #### 5.6. Link Layer
+                      #### 5.6.1. LAN Packet Transmission: Ethernet
+                      #### 5.6.2. LAN Packet Transmission: ARP
+                      #### 5.6.3. What Lies Beneath: Carrier Signals
+           #### 5.7. Wireless Connectivity: Wi-Fi, Bluetooth, and Zigbee
+                      #### 5.7.1. Wireless Protocol Stacks and Uses
+           #### 5.8. Extended Example: DNS Client
+           
 #### Chapter 6   Concurrency with Multithreading
 #### 6.1. Concurrency with Multithreading
 #### 6.2. Processes vs. Threads
