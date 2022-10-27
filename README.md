@@ -55,34 +55,35 @@
            #### 1.6.1. Summary Questions
            #### 1.7. Extended Example: Text Parser State Machine
 #### Chapter 2   Processes and OS Basics
-#### 2.1. Processes and OS Basics
-#### 2.2. Processes and Multiprogramming
-#### 2.2.1. Uniprogramming and Utilization
-#### 2.2.2. Multiprogramming and Concurrency
-#### 2.2.3. Context Switches and Overhead Costs
-#### 2.3. Kernel Mechanics
-#### 2.3.1. Kernel Memory Structure and Protections
-#### 2.3.2. The Boot Procedure
-#### 2.3.3. Kernel Invocation
-#### 2.3.4. Mode Switches and Privileged Instructions
+           #### 2.1. Processes and OS Basics
+           #### 2.2. Processes and Multiprogramming
+                      #### 2.2.1. Uniprogramming and Utilization
+                      #### 2.2.2. Multiprogramming and Concurrency
+                      #### 2.2.3. Context Switches and Overhead Costs
+           #### 2.3. Kernel Mechanics
+                      #### 2.3.1. Kernel Memory Structure and Protections
+                      #### 2.3.2. The Boot Procedure
+                      #### 2.3.3. Kernel Invocation
+                      #### 2.3.4. Mode Switches and Privileged Instructions
 #### 2.4. System Call Interface
-#### 2.4.1. System Calls vs. Function Calls
-#### 2.4.2. Linux System Calls
-#### 2.4.3. Calling System Calls in Assembly
-#### 2.4.4. Calling System Calls with syscall()
+           #### 2.4.1. System Calls vs. Function Calls
+           #### 2.4.2. Linux System Calls
+           #### 2.4.3. Calling System Calls in Assembly
+           #### 2.4.4. Calling System Calls with syscall()
 #### 2.5. Process Life Cycle
-#### 2.5.1. Process Creation
-#### 2.5.2. Switching Program Code
-#### 2.5.3. POSIX Spawn Interface
-#### 2.5.4. Process Destruction
+           #### 2.5.1. Process Creation
+           #### 2.5.2. Switching Program Code
+           #### 2.5.3. POSIX Spawn Interface
+           #### 2.5.4. Process Destruction
 #### 2.6. The UNIX File Abstraction
-#### 2.6.1. Basic File Access
-#### 2.6.2. Working with Files
-#### 2.6.3. Accessing File Metadata
+           #### 2.6.1. Basic File Access
+           #### 2.6.2. Working with Files
+           #### 2.6.3. Accessing File Metadata
 #### 2.7. Events and Signals
-#### 2.7.1. Sending Process Signals
-#### 2.7.2. Custom Signal Handlers
+           #### 2.7.1. Sending Process Signals
+           #### 2.7.2. Custom Signal Handlers
 #### 2.8. Extended Example: Listing Files with Processes
+
 #### Chapter 3   Concurrency with IPC
 #### 3.1. Concurrency with IPC
 #### 3.2. IPC Models
